@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="focuspage.css">
+  <link rel="preload" href="assets/fonts/press-start.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+  <div>
+    <img src="assets/movingobject/girl1.png" alt="girl" class="girl-frame" id="girl">
+  </div>
+  
+  <div>
+    <img src="assets/movingobject/rabit1.png" alt="rabit" class="rabit">
+  </div>
+
+  <div class="timer-box">
+    <div class="timer-display">
+      <span id="time">25:00</span>
+      <span class="mode">FOCUS</span>
+    </div>
+
+    <div class="length-controls">
+      <div class="control-group">
+        <h3>POMODORE:</h3>
+        <div class="control-buttons">
+          <button class="pomo-minus">-</button>
+          <span class="pomo-value" style="color: #8B5E3C;">25</span>
+          <button class="pomo-plus">+</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>BREAK:</h3>
+        <div class="control-buttons">
+          <button class="break-minus">-</button>
+          <span class="break-value" style="color: #8B5E3C;">5</span>
+          <button class="break-plus">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="reset-btn">⟲</button>
+      <button id="play-btn">▶</button>
+    </div>
+  </div>
+  <div class="custom-message" id="customMessage">
+    <div class="custom-message-content">
+      <span class="close-btn" id="closeMessage">&times;</span>
+      <p id="customMessageText">Timer finished! Take a break.</p>
+      <button id="customOkButton">OK</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+
+    background: url('assets/fixobjects/room.png') no-repeat center bottom;
+    background-size: 700px 700px;
+    image-rendering: pixelated; 
+
+    font-family: 'PressStart2P_Local', 'Press Start 2P', monospace;
+}
+@font-face {
+  font-family: 'PressStart2P_Local';
+  src: url('assets/fonts/press-start.woff2') format('woff2'),
+       url('assets/fonts/press-start.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; 
+}
+
+.timer-box {
+  position: absolute;
+  bottom: 170px;
+  left: 60px; 
+  width: 300px;
+  height: 270px;
+  background:#FFF1E4;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PressStart2P_Local', 'Press Start 2P', monospace;
+  letter-spacing: 2px;
+  z-index: 999;
+}
+.timer-display {
+  background: #F79EB2;
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  font-family: 'PressStart2P_Local', 'Press Start 2P', monospace;
+  letter-spacing: 1px;
+}
+#time {
+  margin-left: -60px;
+}
+.mode {
+  font-size: 0.9rem; 
+  margin-top: 2px; 
+  margin-left: 140px; 
+  color: #733E3A;
+}
+.length-controls {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.control-group h3 {
+  font-size: 0.60rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  color: #733E3A;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-buttons button {
+  background: #eaeaea;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: #733E3A;
+}
+
+
+.control-buttons button:hover {
+  background: #d5d5d5;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 10px;
+}
+
+.actions button {
+  background: none;
+  color: #733E3A;
+  padding: 8px 16px;
+  font-family: 'PressStart2P_Local', 'Press Start 2P', monospace;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.actions button:hover {
+  color: #8B5E3C;
+  font-weight: bold;
+}
+#play-btn {
+  width: 50px;       
+  height: 50px;      
+  font-size: 24px;  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.girl {
+    position: absolute;
+    bottom: 120px; 
+    right: 45px; 
+    width: 280px; 
+    height: auto;
+}
+.girl-frame {
+    position: absolute;
+    bottom: 160px;   
+    right: 100px;    
+    width: 300px;   
+    height: auto;
+    z-index: 10;
+    image-rendering: pixelated;
+    animation: float 4s ease-in-out infinite;
+}
+.rabit {
+  position: absolute;
+  bottom: 120px;  
+  left: -20px;  
+  width: 160px;  
+  height: auto;
+  image-rendering: pixelated;
+  z-index: 1000;
+  pointer-events: none;
+}
+@keyframes hop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.custom-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5); 
+  z-index: 2000;
+}
+.custom-message-content {
+  position: relative;
+  width: 400px;
+  padding: 30px 20px;
+  background: #FFF1E4; 
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'PressStart2P_Local', monospace;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+.custom-message-content p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #733E3A;
+}
+
+#customOkButton {
+  padding: 8px 20px;
+  background: #F79EB2;
+  color: #fff; 
+  padding: 12px 30px;  
+  border: none;
+  cursor: pointer;
+  font-family: 'PressStart2P_Local', 'Press Start 2P', monospace;
+  font-size: 16px;
+  cursor: pointer;
+}
+#customOkButton:hover {
+  background: #FC7FA7;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #733E3A;
+}
+.close-btn:hover {
+  color: #4B443E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
