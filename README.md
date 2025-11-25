@@ -16,7 +16,7 @@ Helps you stay focused using the Pomodoro technique with a cozy pixel-art aesthe
  ## Installation
 1.Clone the repository:
 ```bash
-git clone https://github.com/neginjoudi/PixelFocusTimer.git
+git clone https://github.com/neginjoudi/Pixel-Study-Timer.git
 ```
 2.Install dependencies:
 ```bash
